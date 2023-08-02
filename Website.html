@@ -1,0 +1,105 @@
+
+<!-- saved from url=(0041)http://127.0.0.1:5500/index.html?Address= -->
+<html><head><style>
+	h1,body{
+		background-color: coral;
+		padding: 3px;
+		border-radius: 5px;
+		
+	}
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Website
+        </title>
+    </head>
+    <body>
+
+        <h1 align="center"><u>Company Name</u></h1>
+        <br>
+<h3 align="center"><u>This Company Provide CyberSecurity.And Address......</u></h3>
+<form>
+<h4 align="left"><u>Company Recruitment Form</u></h4>
+<br><ul>
+<u><li>Applicant Name:</li></u>
+<input type="text" placeholder="Applicant Name">
+<br><br>
+
+<u><li>Parents Name:</li></u>
+<input type="text" placeholder="Parents Name">
+<br><br>
+<li><u>Job Role</u></li>
+<fieldset>
+<select role="Cyber Security Role">
+<option value="">Pick Any One</option>
+<option value="">Bug Hunting</option>
+<option value="">Security Officer</option>
+<option value="">security Anlaiyzer</option>
+<option value="">Piracy Controller</option>
+</select></fieldset>
+<br><br>>
+<li><u>Skills</u></li>
+<input type="checkbox">Python
+<input type="Checkbox">Java
+<input type="Checkbox">C/C++
+<input type="checkbox">Html,CSS,JavaScript
+<br><br>
+<li><u>Hobbies</u></li>
+<input type="radio">Music
+<input type="radio">Dance
+<input type="radio">sports
+<input type="radio">others
+<br><br>
+<li><u>DOB</u></li>
+<input type="date">
+<br><br>
+<li><u>Address</u></li>
+<textarea rows="5" cols="50" name="Address"></textarea>
+<br><br>  
+<li><u>Image</u></li>
+<input type="file">
+<br><br>
+<h6 align="center"><input type="submit"></h6>
+
+<h6 align="center"><input type="reset"></h6>
+</ul>
+</form>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
